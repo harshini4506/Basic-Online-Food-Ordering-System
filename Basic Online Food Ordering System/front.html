@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering</title>
+    <link rel="stylesheet" href="front.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Foodie's Hub</h1>
+        
+        <h2>Menu</h2>
+        <div class="menu">
+            <div class="item">
+                <h3>Burger - ₹105</h3>
+                <label><input type="checkbox" name="order" value="Burger - ₹105"> Add to Order</label>
+            </div>
+            <div class="item">
+                <h3>Pizza - ₹300</h3>
+                <label><input type="checkbox" name="order" value="Pizza - ₹300"> Add to Order</label>
+            </div>
+            <div class="item">
+                <h3>Pasta - ₹180</h3>
+                <label><input type="checkbox" name="order" value="Pasta - ₹180"> Add to Order</label>
+            </div>
+            <div class="item">
+                <h3>Sandwich - ₹120</h3>
+                <label><input type="checkbox" name="order" value="Sandwich - ₹120"> Add to Order</label>
+            </div>
+            <div class="item">
+                <h3>French Fries - ₹90</h3>
+                <label><input type="checkbox" name="order" value="French Fries - ₹90"> Add to Order</label>
+            </div>
+            <div class="item">
+                <h3>Chowmein - ₹150</h3>
+                <label><input type="checkbox" name="order" value="Chowmein - ₹150"> Add to Order</label>
+            </div>
+            <div class="item">
+                <h3>Chicken Biryani - ₹250</h3>
+                <label><input type="checkbox" name="order" value="Chicken Biryani - ₹250"> Add to Order</label>
+            </div>
+            <div class="item">
+                <h3>Paneer Tikka - ₹220</h3>
+                <label><input type="checkbox" name="order" value="Paneer Tikka - ₹220"> Add to Order</label>
+            </div>
+            <div class="item">
+                <h3>Cold Coffee - ₹80</h3>
+                <label><input type="checkbox" name="order" value="Cold Coffee - ₹80"> Add to Order</label>
+            </div>
+            <div class="item">
+                <h3>Soft Drinks - ₹50</h3>
+                <label><input type="checkbox" name="order" value="Soft Drinks - ₹50"> Add to Order</label>
+            </div>
+        </div>
+
+        <h2>Order Details</h2>
+        <form action="Thank you.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            
+            <h3>Payment Method:</h3>
+            <label><input type="radio" name="payment" value="Cash" required> Cash</label>
+            <label><input type="radio" name="payment" value="Card"> Card</label>
+            <label><input type="radio" name="payment" value="UPI"> UPI</label>
+            
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
